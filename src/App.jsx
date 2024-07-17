@@ -55,7 +55,7 @@ function App() {
       ></textarea>
       <div id="options">
         <button onClick={() => handleSubmit()}>Post</button>
-        <a href="http://localhost:5174/home">
+        <a href="https://blog-api-website1.vercel.app/home">
           <button>Cancel</button>
         </a>
       </div>
