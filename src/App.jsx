@@ -8,7 +8,7 @@ const storageHost = createHost([
     allowedMethods: ["get", "set", "remove"],
   },
   {
-    origin: "http://localhost:5173",
+    origin: "https://no-option.vercel.app/",
     allowedMethods: ["get"],
   },
 ]);
