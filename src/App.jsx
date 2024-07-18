@@ -14,7 +14,7 @@ const storageHost = createHost([
 ]);
 
 const handleSubmit = () => {
-  const guestStorage = createGuest("https://blog-api-website1.vercel.app/");
+  const guestStorage = createGuest("https://blog-api-website1.vercel.app/home");
 
   guestStorage.get("token", (error, value) => {
     if (error) {
