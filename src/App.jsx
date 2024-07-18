@@ -35,8 +35,9 @@ const handleSubmit = () => {
       content: document.getElementById("content").value,
     }),
   }).then((res) => {
+    console.log(localStorage.getItem('token'))
     if (res.status === 403) {
-      window.location.href = "https://blog-api-website1.vercel.app/log-in";
+      //window.location.href = "https://blog-api-website1.vercel.app/log-in";
       return;
     }
     window.location.href = "https://blog-api-website1.vercel.app/home";
