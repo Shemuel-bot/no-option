@@ -14,7 +14,7 @@ const storageHost = createHost([
 ]);
 
 const handleSubmit = () => {
-  const guestStorage = createGuest("https://blog-api-website1.vercel.app/home");
+  const guestStorage = createGuest("https://blog-api-website1.vercel.app/");
 
   guestStorage.get("token", (error, value) => {
     if (error) {
@@ -37,7 +37,7 @@ const handleSubmit = () => {
   }).then((res) => {
     console.log(localStorage.getItem('token'))
     if (res.status === 403) {
-      //window.location.href = "https://blog-api-website1.vercel.app/log-in";
+      window.location.href = "https://blog-api-website1.vercel.app/log-in";
       return;
     }
     window.location.href = "https://blog-api-website1.vercel.app/home";
